@@ -19,7 +19,8 @@ const Sos = () => {
 
     // Send email to backend
     try {
-      const response = await fetch('http://localhost:5038/api/users', {
+      const response = await fetch('https://todoappwithsos-production.up.railway.app/api/users', {
+      // const response = await fetch('http://localhost:5038/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
